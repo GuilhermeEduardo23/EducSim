@@ -1,0 +1,55 @@
+@import url('/assets/styles/style.css');
+
+.container-cadastro {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-cadastro h1 {
+    text-align: center;
+}
+
+a {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: cyan;
+    color: inherit;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    font: bold 1.0rem 'Poppins';
+}
+
+a:hover {
+    letter-spacing: 5px;
+    background: #000;
+    color: cyan;
+    transition: 0.5s all ease-in-out;
+}
+
+@media(max-width: 420px) {
+    .container-cadastro {
+        width: 90vw;
+        height: 300px;
+    }
+
+    .container-cadastro h1 {
+        font: bold 1.5rem 'Poppins';
+    }
+
+    .container-cadastro a {
+        width: 200px;
+        font: bold 0.8rem 'Poppins';
+        color: inherit;
+    }
+}
